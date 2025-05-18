@@ -134,7 +134,7 @@ console.log(windowDimensions.width)
                                         </li> 
                                         <li class="nav-item logo_item">
                                         <a class="nav-link offcanvas-link" aria-current="page" href="/">
-                                            <img src="./images/Home/ahmed_logo (2).png" width={60} height={60} alt="logo"/>
+                                            <img src={process.env.PUBLIC_URL + "/images/Home/ahmed_logo (2).png"} width={60} height={60} alt="logo"/>
 
                                         </a>
                                         </li> 
@@ -168,8 +168,8 @@ console.log(windowDimensions.width)
                             <button type="button" className="btn cv_btn">Download CV</button>
                         </div>
                     </div>
-                    <img src={"./images/Home/Illustration top.png"} alt="hero" className="home_image_top" data-aos="zoom-in-up" data-aos-duration="2500"/>
-                    <img src={ windowDimensions.width > 992 ? "./images/Home/Ilustration bottom.png" : "./images/Home/Component 1.png"} alt="hero" className="home_image_bottom" />
+                    <img src={process.env.PUBLIC_URL + "/images/Home/Illustration top.png"} alt="hero" className="home_image_top" data-aos="zoom-in-up" data-aos-duration="2500"/>
+                    <img src={ windowDimensions.width > 992 ? process.env.PUBLIC_URL + "/images/Home/Ilustration bottom.png" : process.env.PUBLIC_URL + "/images/Home/Component 1.png"} alt="hero" className="home_image_bottom" />
 
             </div>
             <div className="about_section my_section" id="about" ref={aboutRef}>
@@ -177,7 +177,7 @@ console.log(windowDimensions.width)
                     <div className="row about_content">
                         <div className="col-md-6 col-12 about_img_container" data-aos="fade-up" data-aos-duration="3000" >
                             <div className="about_img_container2">
-                            <img src="./images/about/photo_5271890631934996703_y.jpg" className="about_img" width={"100%"} height={"100%"}/>
+                            <img src={process.env.PUBLIC_URL + "/images/about/photo_5271890631934996703_y.jpg"} className="about_img" width={"100%"} height={"100%"}/>
                             </div>
 
                         </div>
@@ -216,16 +216,16 @@ console.log(windowDimensions.width)
                             <h4>React</h4>
                         </div>
                         <div className="skill_card  " >
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" style={{color:"#764ABC"}} height="24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M16.634 16.504c.87-.075 1.543-.84 1.5-1.754-.047-.914-.796-1.648-1.709-1.648h-.061a1.71 1.71 0 00-1.648 1.769c.03.479.226.869.494 1.153-1.048 2.038-2.621 3.536-5.005 4.795-1.603.838-3.296 1.154-4.944.93-1.378-.195-2.456-.81-3.116-1.799-.988-1.499-1.078-3.116-.255-4.734.6-1.17 1.499-2.023 2.099-2.443a9.96 9.96 0 01-.42-1.543C-.868 14.408-.416 18.752.932 20.805c1.004 1.498 3.057 2.456 5.304 2.456.6 0 1.23-.044 1.843-.194 3.897-.749 6.848-3.086 8.541-6.532zm5.348-3.746c-2.32-2.728-5.738-4.226-9.634-4.226h-.51c-.253-.554-.837-.899-1.498-.899h-.045c-.943 0-1.678.81-1.647 1.753.03.898.794 1.648 1.708 1.648h.074a1.69 1.69 0 001.499-1.049h.555c2.309 0 4.495.674 6.488 1.992 1.527 1.005 2.622 2.323 3.237 3.897.538 1.288.509 2.547-.045 3.597-.855 1.647-2.294 2.517-4.196 2.517-1.199 0-2.367-.375-2.967-.644-.36.298-.96.793-1.394 1.093 1.318.598 2.652.943 3.94.943 2.922 0 5.094-1.647 5.919-3.236.898-1.798.824-4.824-1.47-7.416zM6.49 17.042c.03.899.793 1.648 1.708 1.648h.06a1.688 1.688 0 001.648-1.768c0-.9-.779-1.647-1.693-1.647h-.06c-.06 0-.15 0-.226.029-1.243-2.098-1.768-4.347-1.572-6.772.12-1.828.72-3.417 1.797-4.735.9-1.124 2.593-1.68 3.747-1.708 3.236-.061 4.585 3.971 4.689 5.574l1.498.45C17.741 3.197 14.686.62 11.764.62 9.02.62 6.49 2.613 5.47 5.535 4.077 9.43 4.991 13.177 6.7 16.174c-.15.195-.24.539-.21.868z"></path></svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" style={{color:"#764ABC"}} height="36" width="36" xmlns="http://www.w3.org/2000/svg"><path d="M16.634 16.504c.87-.075 1.543-.84 1.5-1.754-.047-.914-.796-1.648-1.709-1.648h-.061a1.71 1.71 0 00-1.648 1.769c.03.479.226.869.494 1.153-1.048 2.038-2.621 3.536-5.005 4.795-1.603.838-3.296 1.154-4.944.93-1.378-.195-2.456-.81-3.116-1.799-.988-1.499-1.078-3.116-.255-4.734.6-1.17 1.499-2.023 2.099-2.443a9.96 9.96 0 01-.42-1.543C-.868 14.408-.416 18.752.932 20.805c1.004 1.498 3.057 2.456 5.304 2.456.6 0 1.23-.044 1.843-.194 3.897-.749 6.848-3.086 8.541-6.532zm5.348-3.746c-2.32-2.728-5.738-4.226-9.634-4.226h-.51c-.253-.554-.837-.899-1.498-.899h-.045c-.943 0-1.678.81-1.647 1.753.03.898.794 1.648 1.708 1.648h.074a1.69 1.69 0 001.499-1.049h.555c2.309 0 4.495.674 6.488 1.992 1.527 1.005 2.622 2.323 3.237 3.897.538 1.288.509 2.547-.045 3.597-.855 1.647-2.294 2.517-4.196 2.517-1.199 0-2.367-.375-2.967-.644-.36.298-.96.793-1.394 1.093 1.318.598 2.652.943 3.94.943 2.922 0 5.094-1.647 5.919-3.236.898-1.798.824-4.824-1.47-7.416zM6.49 17.042c.03.899.793 1.648 1.708 1.648h.06a1.688 1.688 0 001.648-1.768c0-.9-.779-1.647-1.693-1.647h-.06c-.06 0-.15 0-.226.029-1.243-2.098-1.768-4.347-1.572-6.772.12-1.828.72-3.417 1.797-4.735.9-1.124 2.593-1.68 3.747-1.708 3.236-.061 4.585 3.971 4.689 5.574l1.498.45C17.741 3.197 14.686.62 11.764.62 9.02.62 6.49 2.613 5.47 5.535 4.077 9.43 4.991 13.177 6.7 16.174c-.15.195-.24.539-.21.868z"></path></svg>
                             <h4>Redux Toolkit</h4>
                         </div>
                         <div className="skill_card  " >
-                            <img src="./images/skills/bootstrap_transparent.png" width={36} height={36}/>
+                            <i class="fa-brands fa-bootstrap" style={{color:"rgb(116, 48, 249)" ,fontSize:"24px"}}></i>
                             <h4>Bootstrap</h4>
                         </div>
                         <div className="skill_card " >
                             <img
-                                src="./images/skills/python.png"
+                                src={process.env.PUBLIC_URL + "/images/skills/python.png"}
                                 alt="Python Logo"
                                 height="36"
                                 width="36"
@@ -233,11 +233,11 @@ console.log(windowDimensions.width)
                             <h4>Python</h4>
                         </div>
                         <div className="skill_card " >
-                            <img src="./images/skills/django_transparent__1_-removebg-preview.png" width={36} height={36}/>
+                            <img src={process.env.PUBLIC_URL + "/images/skills/django_transparent__1_-removebg-preview.png"} width={36} height={36}/>
                             <h4>Django</h4>
                         </div>
                         <div className="skill_card " >
-                            <img src="./images/skills/django.png" width={36} height={36}/>
+                            <img src={process.env.PUBLIC_URL + "/images/skills/django.png"} width={36} height={36}/>
                             <h4>Django Rest Framework</h4>
                         </div>
                     </div>
@@ -254,7 +254,7 @@ console.log(windowDimensions.width)
 
                         <div className="project_card card" data-aos="fade-up" data-aos-duration="1500">
                             <div className="card-img-top">
-                            <img src="/images/projects/prescripto.png" className="card-img-top" />
+                            <img src={process.env.PUBLIC_URL + "/images/projects/prescripto.png"} className="card-img-top" />
                             </div>
                             <div className="card-body">
                             <h4>Prescripto</h4>
@@ -279,7 +279,7 @@ console.log(windowDimensions.width)
                         </div>
 
                         <div className="project_card card " data-aos="fade-up" data-aos-duration="1500">
-                            <img src="./images/projects/mntn.png" className="card-img-top" />
+                            <img src={process.env.PUBLIC_URL + "/images/projects/mntn.png"} className="card-img-top" />
                             <div className="card-body">
                             <h4>MNTN</h4>
                             <p className="card-text">An interactive platform for outdoor enthusiasts to discover new hiking trails, book guided tours, and plan adventures.</p>
@@ -300,7 +300,7 @@ console.log(windowDimensions.width)
                         </div>
 
                         <div className="project_card card" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="./images/projects/Rock.png" className="card-img-top" />
+                            <img src={process.env.PUBLIC_URL + "/images/projects/Rock.png"} className="card-img-top" />
                             <div className="card-body">
                             <h4>Rock</h4>
                             <p className="card-text">Engage students with immersive VR learning experiences, making education more interactive and dynamic.</p>
@@ -321,7 +321,7 @@ console.log(windowDimensions.width)
                         </div>
 
                         <div className="project_card card" data-aos="fade-up" data-aos-duration="1500">
-                            <img src="./images/projects/india.png" className="card-img-top"/>
+                            <img src={process.env.PUBLIC_URL + "/images/projects/india.png"} className="card-img-top"/>
                             <div className="card-body">
                             <h4>Indian Portfolio</h4>
                             <p className="card-text">Showcasing creative projects that blend innovation and cultural inspiration with modern design approaches.</p>
@@ -402,7 +402,7 @@ console.log(windowDimensions.width)
                     </div>
 
                     </div>
-                <img src="./images/Illustration.png" alt="Illustration" data-aos="fade-up" data-aos-duration="2500" />
+                <img src={process.env.PUBLIC_URL + "/images/Illustration.png"} alt="Illustration" data-aos="fade-up" data-aos-duration="2500" />
                 </div>
             
             <div className="footer_section" style={{marginTop:"120px"}}>
